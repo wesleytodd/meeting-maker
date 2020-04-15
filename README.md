@@ -55,8 +55,8 @@ $ npm i @wesleytodd/meeting-maker
 ```javascript
 const maker = require('@wesleytodd/meeting-maker')
 
-;(await () => {
-  const issue = await maker.meetings..createNextMeeting(client, {
+;(async () => {
+  const issue = await maker.meetings.createNextMeeting(client, {
     owner: 'wesleytodd',
     repo: 'meeting-maker',
     schedules: []
